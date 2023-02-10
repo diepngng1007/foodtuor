@@ -1,0 +1,386 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Inter',sans-serif;
+}
+
+/* responsive cho màn mobile */
+    .container{
+        min-width: 576px;
+
+    }
+    .banner{
+        margin-top: 30px;
+    }
+    .banner img{
+        width: 100%;
+    }
+    .header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 50px;
+    }
+    .header_left h5{
+        font-size: 25px;
+        
+    }
+     .header_right li{
+        display: inline-block;
+    }
+    .header_right a{
+        text-decoration: none; 
+        padding: 0 5px;
+        font-size: 18px;
+        color:black;
+    } 
+    .header_right{
+        display: flex;
+        align-items: center;
+    }
+    .signIn button{
+        width: 85px;
+        height: 42px;
+        margin: 0 15px;
+        border: 1px solid #F54748;
+        background-color: white;
+        border-radius: 5px;
+        color: #F54748;
+        cursor: pointer;
+    }
+    .signUp button{
+        width: 85px;
+        height: 42px;
+        border-radius: 5px;
+        border: 1px solid #F54748;
+        background-color:  #F54748;
+        color: white;
+        cursor: pointer;
+    }
+    .news{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 40px;
+    }
+    .news_content_left li{
+        list-style: none;
+    }
+    .news_content_left a{
+        text-decoration: none;
+        color:black;
+        font-weight: bold;
+        line-height: 38px;
+    }
+    .news_content_left{
+        margin-left: 20px;
+    }
+    .news_content{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        padding-right: 20px;
+    }
+    .content_item img{
+        width: 320px;
+        border-radius: 20px;
+    }
+    .content_item p{
+        font-weight: bold;
+        font-size: 15px;
+        padding-top: 18px;
+    }
+    .content_item strong{
+        line-height: 70px;
+        color:#F54748;
+    }
+    .content_item button{
+        margin-bottom: 50px;
+        width: 320px;
+        height: 42px;
+        border-radius: 5px;
+        color:white;
+        background-color: black;
+    }
+    .fooster_home{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 60px;
+        margin-bottom: 50px;
+    }
+    .fooster_home h5{
+        font-size: 25px;
+    }
+    .fooster_home li{
+        display: inline-block;
+    }
+    .fooster_home a{
+        text-decoration: none;
+        padding: 0 15px;
+        color:black;
+        font-size: 20px;
+    }
+    .fooster_home a:hover{
+        color:#F54748;
+    }
+/* responsive cho màn tablet */
+@media only screen and (min-width: 768px){
+    .container{
+        max-width: 1023px;
+    }
+    .banner{
+        margin-top: 30px;
+    }
+    .banner img{
+        width: 100%;
+    }
+    .header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 50px;
+    }
+    .header_left h5{
+        font-size: 25px;
+        
+    }
+     .header_right li{
+        display: inline-block;
+    }
+    .header_right a{
+        text-decoration: none; 
+        padding: 0 15px;
+        font-size: 20px;
+        color:black;
+    } 
+    .header_right{
+        display: flex;
+        align-items: center;
+    }
+    .signIn button{
+        width: 85px;
+        height: 42px;
+        margin: 0 15px;
+        border: 1px solid #F54748;
+        background-color: white;
+        border-radius: 5px;
+        color: #F54748;
+        cursor: pointer;
+    }
+    .signUp button{
+        width: 85px;
+        height: 42px;
+        border-radius: 5px;
+        border: 1px solid #F54748;
+        background-color:  #F54748;
+        color: white;
+        cursor: pointer;
+    }
+    .news{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 40px;
+    }
+    .news_content_left li{
+        list-style: none;
+    }
+    .news_content_left{
+        margin-left: 30px;
+    }
+    .news_content_left{
+        margin-top: -12px;
+        line-height: 50px;
+    }
+    .news_content_left a{
+        text-decoration: none;
+        line-height: 38px;
+        color:black;
+        font-weight: bold;
+    }
+    .news_content{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    .content_item img{
+        width: 290px;
+        border-radius: 20px;
+    }
+    .content_item p{
+        font-weight: bold;
+        font-size: 15px;
+        padding-top: 18px;
+    }
+    .content_item strong{
+        line-height: 85px;
+        color:#F54748;
+    }
+    .content_item button{
+        margin-bottom: 50px;
+        width: 290px;
+        height: 42px;
+        border-radius: 5px;
+        color:white;
+        background-color: black;
+    }
+    .p-one p{
+        margin-right: 30px;
+    }
+    .fooster_home{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 60px;
+        margin-bottom: 50px;
+    }
+    .fooster_home h5{
+        font-size: 25px;
+    }
+    .fooster_home li{
+        display: inline-block;
+    }
+    .fooster_home a{
+        text-decoration: none;
+        padding: 0 15px;
+        color:black;
+        font-size: 20px;
+    }
+    .fooster_home a:hover{
+        color:#F54748;
+    }
+    
+}
+
+/* responsive cho màn pc */
+@media only screen and (min-width:1024px){
+    .container{
+        max-width: 1440px;
+        margin: 0 auto;
+    }
+    .banner{
+        margin-top: 30px;
+    }
+    .banner img{
+        width: 100%;
+    }
+    .header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 50px;
+    }
+    .header_left h5{
+        font-size: 25px;
+        
+    }
+     .header_right li{
+        display: inline-block;
+    }
+    .header_right a{
+        text-decoration: none; 
+        padding: 0 15px;
+        font-size: 20px;
+        color:black;
+    } 
+    .signIn button{
+        width: 85px;
+        height: 42px;
+        margin: 0 15px;
+        border: 1px solid #F54748;
+        background-color: white;
+        border-radius: 5px;
+        color: #F54748;
+        cursor: pointer;
+    }
+    .signUp button{
+        width: 85px;
+        height: 42px;
+        border-radius: 5px;
+        border: 1px solid #F54748;
+        background-color:  #F54748;
+        color: white;
+        cursor: pointer;
+    }
+    .menu_one a:hover{
+        color:#F54748;
+    }
+    .header_right{
+        display: flex;
+        align-items: center;
+    }
+    .news{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 40px;
+    }
+    .news_content_left{
+        margin-left: 0;
+    }
+    .news_content_left li{
+        list-style: none;
+    }
+    .news_content_left{
+        line-height: 50px;
+    }
+    .news_content_left a{
+        text-decoration: none;
+        line-height: 38px;
+        color:black;
+        font-weight: bold;
+    }
+    .news_content_right{
+        margin-left: 0;
+    }
+    .news_content{
+        display: grid;
+        grid-template-columns: repeat(3,1fr); 
+    
+    }
+    .content_item img{
+        width: 345px;
+        border-radius: 20px;
+        margin-left: 25px;
+    }
+    .content_item p{
+        font-weight: bold;
+        padding-left: 30px;
+        padding-top: 18px;
+    }
+    .content_item strong{
+        padding-left: 30px;
+        font-size: 18px;
+        line-height: 85px;
+        color:#F54748;
+    }
+    .content_item button{
+        margin-left:30px ;
+        margin-bottom: 50px;
+        width: 340px;
+        height: 42px;
+        border-radius: 5px;
+        color:white;
+        background-color: black;
+    }
+    .fooster_home{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 60px;
+        margin-bottom: 50px;
+    }
+    .fooster_home h5{
+        font-size: 25px;
+    }
+    .fooster_home li{
+        display: inline-block;
+    }
+    .fooster_home a{
+        text-decoration: none;
+        padding: 0 15px;
+        color:black;
+        font-size: 20px;
+    }
+    .fooster_home a:hover{
+        color:#F54748;
+    }
+}
