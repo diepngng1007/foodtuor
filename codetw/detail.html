@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .header_right.active {
+            display: block;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <!-- <div class=" md:max-w-[1024px] md:m-auto xl:max-w-[1280px] xl:m-auto container"></div> -->
+    <div class="container m-auto">
+        <!-- header -->
+        <div class="flex justify-between md:flex md:justify-between">
+            <div class="font-bold pl-[15px] text-xl">
+                <h5>Fudo<span class="text-[#F54748]">.</span></h5>
+            </div>
+            <!-- header-left -->
+            <div class="flex items-center mx-0 mr-2">
+                <div class="header_right absolute left-0 bg-red-100 min-h-[60vh] top-[10%] w-full flex items-center px-5 hidden">
+                    <ul class="leading-[50px] flex-col items-center gap-[4vw] text-center mt-[70px]">
+                        <li class="hover:text-[#F54748]"><a href="./home.html">Home</a></li>
+                        <li class="hover:text-[#F54748]"><a href="./product.html">Products</a></li>
+                        <li class="hover:text-[#F54748]"><a href="./product.html">About Us</a></li>
+                        <li class="hover:text-[#F54748]"><a href="./detail.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="hidden md:block xl:block">
+                    <ul class="flex ">
+                        <li class="hover:text-[#F54748] pl-4"><a href="./home.html">Home</a></li>
+                        <li class="hover:text-[#F54748] pl-4"><a href="./product.html">Products</a></li>
+                        <li class="hover:text-[#F54748] pl-4"><a href="./product.html">About Us</a></li>
+                        <li class="hover:text-[#F54748] pl-4"><a href="./detail.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="flex mt-0 justify-between items-center gap-2 pl-4">
+                    <div class="mt-0.5">
+                        <button class="px-3 py-2 bg-white w-[84px] h-[42px] rounded-md text-black border-[#F54748] border-solid border-2 cursor-pointer text-[#F54748]">Sign In</button>
+                    </div>
+                    <div class="mt-0.5">
+                        <button class="px-3 py-2 bg-[#F54748] w-[84px] h-[42px] rounded-md text-white cursor-pointer">Sign Up</button>
+                    </div>
+                    
+                </div>
+                <i class="fa-solid fa-bars text-3xl cursor-pointer ml-2 block md:hidden xl:hidden"></i>
+            </div>
+            <!-- header-right -->
+        </div>
+        <div class="mt-[70px] md:flex xl:flex xl:justify-between">
+            <div class="xl:mt-10 m-5">
+                <div class="">
+                    <h2 class="font-bold text-3xl pb-2 xl:text-[35px]">Big and Juicy Wagyu Beef <br> Cheeseburger</h2>
+                <strong class="text-xl text-[#F54748] xl:text-[20px]">$30</strong>
+                <p class="text-xs pt-2 xl:text-[18px] xl:tracking-wide xl:leading-6">Pellentesque habitant morbi tristique senectus et netus et malesuada <br> fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies <br> eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas <br> semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+                </div>
+                <div class="mt-3">
+                    <input type="text" placeholder="Quantity" class="border-solid border-2 w-100 h-10 placeholder:pl-2 rounded-md xl:w-[200px]">
+                    <button class="bg-black text-white w-50 h-10 rounded-md p-2 text-sm">Add To Cart</button>
+                </div>
+            </div>
+            <div class=" mt-10 mr-[50px] ml-[50px] md:ml-0 md:mr-0 xl:mr-0 xl:ml-0">
+                <img src="./imgs/image 26.png" alt="" class="md:w-[400px] md:pl-[30px] xl:w-[600px] xl:pr-[20px]">
+            </div>
+        </div>
+        
+        <div class="">
+            <h3 class="font-bold text-center mt-10 text-2xl xl:text-3xl">Related Products</h3>
+            <div class="md:grid md:grid-cols-2 md:mt-[30px] xl:grid xl:grid-cols-3">
+                <div class="mt-5 md:mt-0">
+                    <img src="./imgs/image 26 (3).png" alt="" class="rounded-2xl w-[320px] ml-[30px] xl:w-[380px]">
+                    <p class="font-bold mt-4 mb-2 ml-[30px] text-sm xl:text-[18px]">Fresh and Healthy Mixed Mayonnaise Salad</p>
+                    <strong class="text-[#F54748] text-lg ml-[30px] xl:text-[20px]">$30</strong> <br>
+                    <button class="w-[320px] bg-black text-white h-[42px] cursor-pointer rounded-md mb-[40px] mt-[18px] ml-[30px] xl:w-[380px]">Add To Cart</button>
+                </div>
+                <div class="">
+                    <img src="./imgs/image 26 (4).png" alt="" class="rounded-2xl w-[320px] ml-[30px] xl:w-[380px]">
+                    <p class="font-bold mt-4 mb-2 ml-[30px] text-sm xl:text-[18px]">The Creamiest Creamy Chicken</p>
+                    <strong class="text-[#F54748] text-lg ml-[30px] xl:text-[20px]">$30</strong> <br>
+                    <button class="w-[320px] bg-black text-white h-[42px] cursor-pointer rounded-md mb-[40px] mt-[18px] ml-[30px] xl:w-[380px]">Add To Cart</button>
+                </div>
+                <div class="">
+                    <img src="./imgs/image 26 (5).png" alt="" class="rounded-2xl w-[320px] ml-[30px] xl:w-[380px]">
+                    <p class="font-bold mt-4 mb-2 ml-[30px] text-sm xl:text-[18px]">Fruity Pancake with Orange & Blueberry</p>
+                    <strong class="text-[#F54748] text-lg ml-[30px] xl:text-[20px]">$30</strong> <br>
+                    <button class="w-[320px] bg-black text-white h-[42px] cursor-pointer rounded-md mb-[40px] mt-[18px] ml-[30px] xl:w-[380px]">Add To Cart</button>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="flex items-center justify-between h-[50px]">
+            <div class="font-bold ml-5 text-xl">
+                <h5>Fudo<span class="text-[#F54748]">.</span></h5>
+            </div>
+            <div class="">
+                <ul class="space-x-2">
+                    <li class="inline-block"><a href="#">Home</a></li>
+                    <li class="inline-block"><a href="#">Products</a></li>
+                    <li class="inline-block"><a href="#">About Us</a></li>
+                    <li class="inline-block"><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script>
+        const clickBars = document.querySelector('.fa-solid');
+        const navbar = document.querySelector('.header_right');
+        console.log(clickBars, navbar);
+        clickBars.addEventListener('click', function() {
+        navbar.classList.toggle('active');
+    });
+    </script>
+</body>
+</html>

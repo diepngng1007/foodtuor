@@ -8,6 +8,15 @@
 body{
     font-family: 'Inter',sans-serif;
 }
+.news_content_one{
+transition: 5s;
+
+}
+
+.content_item img{
+    opacity: 90%;
+    transition: 0.3s;
+}
 
 /* responsive cho màn mobile */
     .container{
@@ -53,7 +62,7 @@ body{
         transition: 0.5s;
    }
    .header_right.active{
-    left:0;   /*đã đổi*/
+        left:0;   /*đã đổi*/
    }
    .header_right div{
         position: absolute;  /*đã đổi*/
@@ -107,6 +116,9 @@ body{
     .header_right{
         display: flex;
         align-items: center;
+    }
+    .sub_content{
+        margin-top: 90px;
     }
     .quality{
         width: 160px;
@@ -283,6 +295,7 @@ body{
     }
     hr{
         margin: 0 15px;
+        border: 1px solid #e5e4e4;
     }
     .fooster_home{
         display: flex;
@@ -318,15 +331,16 @@ body{
         display: flex;
         justify-content: space-between;
         align-items: center;
-        margin-top: 30px;
+
     }
     .header_left h5{
         font-size: 25px;
         padding-left:15px;
     }
-     .header_right li{
+     /* .header_right li{
         display: inline-block;
-    }
+    } */
+   
     .header_right a{
         text-decoration: none; 
         padding: 0 15px;
@@ -584,7 +598,7 @@ body{
 
 /* 
 responsive màn pc */
-@media only screen and (min-width:1023px) {
+@media only screen and (min-width:1024px) {
     .container{
         max-width: 1440px;
         margin: 0 auto;
@@ -595,6 +609,29 @@ responsive màn pc */
         justify-content: space-between;
         align-items: center;
         margin-top: 50px;
+        background-color: transparent; /*đã đổi*/
+        position: static;
+        width: 100%;
+        top:0;
+        height: 55px; /*đã đổi*/
+        z-index: 1; /*đã đổi*/
+    }
+    .fa-solid.fa-bars{
+        display: none;  /*đã đổi*/
+   }
+   .header_right{
+    position:static; 
+    background-color:transparent ; 
+    z-index: 1; 
+    
+    transition: 0.5s;
+}
+    .header_right div{
+        position: static;  /*đã đổi*/
+
+    }
+    .menu ul{
+        float:right;  /*đã đổi*/
     }
     .header_left h5{
         font-size: 25px;

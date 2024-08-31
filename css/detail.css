@@ -10,7 +10,7 @@ body{
 
 /* responsive cho màn mobile */
 .container{
-    min-height: 576px;
+    max-width: 100%;
     margin: 0 15px;
 }
 .header{

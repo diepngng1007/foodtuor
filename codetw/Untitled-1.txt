@@ -1,0 +1,27 @@
+<div class="flex md:flex items-center md:items-center justify-between md:justify-between bg-white top-0 w-full h-[55px]">
+    <div class="font-bold pl-[15px] text-xl">
+        <h5>Fudo<span class="text-[#F54748]">.</span></h5>
+    </div>
+    <!-- header-left -->
+    <div class="flex items-center mx-0 mr-2 w-full ml-[100px] mt-[8px]">
+        <div class="header_right absolute left-0 bg-red-100 min-h-[60vh] top-[10%] w-full flex items-center px-5 hidden">
+            <ul class="leading-[50px] flex-col items-center gap-[4vw] text-center mt-[70px]">
+                <li class="hover:text-[#F54748]"><a href="./home.html">Home</a></li>
+                <li class="hover:text-[#F54748]"><a href="./product.html">Products</a></li>
+                <li class="hover:text-[#F54748]"><a href="./product.html">About Us</a></li>
+                <li class="hover:text-[#F54748]"><a href="./detail.html">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="flex mt-0 justify-between items-center gap-2">
+            <div class="mt-0.5">
+                <button class="px-3 py-2 bg-white w-[84px] h-[42px] rounded-md text-black border-[#F54748] border-solid border-2 cursor-pointer text-[#F54748]">Sign In</button>
+            </div>
+            <div class="mt-0.5">
+                <button class="px-3 py-2 bg-[#F54748] w-[84px] h-[42px] rounded-md text-white cursor-pointer">Sign Up</button>
+            </div>
+            
+        </div>
+        <i class="fa-solid fa-bars text-3xl cursor-pointer ml-2"></i>
+    </div>
+    <!-- header-right -->
+</div>
